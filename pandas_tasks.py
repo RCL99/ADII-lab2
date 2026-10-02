@@ -13,5 +13,24 @@ def analyze_titanic(data: TitanicInput) -> TitanicSummary:
     и долю выживших по классам, а также пять наибольших тарифов по убыванию.
     """
 
-    data_frame = pd.read_csv(data);
-    raise NotImplementedError
+    # датафрейм
+    titanic_df = pd.read_csv(data.csv_path)
+
+    # кол-во пропусков в каждом столбце
+    missing_count_by_column = titanic_df.isnull().sum()
+
+    # число пассажиров > 30 лет
+    passengers_over_30_count = (titanic_df["Age"] > 30).sum()
+
+    # вычислить средний возраст для каждого значения Pclass
+    mean_age_by_pclass = titanic_df.groupby("Pclass")["Age"].mean()
+
+    # вычислить долю выживших для каждого Pclass
+    survival_rate_by_pclass = titanic_df.groupby("Pclass")["Survived"].mean()  # [1+0+1+1+0...].mean
+
+    # вернуть пять наибольших значений Fare в порядке убывания
+    highest_fares = titanic_df["Fare"].nlargest(5).tolist()
+    print(highest_fares)
+
+if __name__ == "__main__":
+    analyze_titanic(TitanicInput(csv_path="titanic.csv"))
