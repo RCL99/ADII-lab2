@@ -12,4 +12,6 @@ def analyze_titanic(data: TitanicInput) -> TitanicSummary:
     Нужно: посчитать пропуски, число пассажиров старше 30 лет, средний возраст
     и долю выживших по классам, а также пять наибольших тарифов по убыванию.
     """
+
+    data_frame = pd.read_csv(data);
     raise NotImplementedError
