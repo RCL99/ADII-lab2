@@ -16,21 +16,39 @@ def analyze_titanic(data: TitanicInput) -> TitanicSummary:
     # датафрейм
     titanic_df = pd.read_csv(data.csv_path)
 
+    # общее число строк
+    row_count = len(titanic_df)
+
     # кол-во пропусков в каждом столбце
     missing_count_by_column = titanic_df.isnull().sum()
+    missing_by_column = {
+        column_name: int(missing_count)
+        for column_name, missing_count in missing_count_by_column.items()
+    }
 
-    # число пассажиров > 30 лет
-    passengers_over_30_count = (titanic_df["Age"] > 30).sum()
+    # число пассажиров старше 30 лет (NaN в Age дают False при сравнении)
+    adults_over_30_count = int((titanic_df["Age"] > 30).sum())
 
-    # вычислить средний возраст для каждого значения Pclass
-    mean_age_by_pclass = titanic_df.groupby("Pclass")["Age"].mean()
+    # средний возраст для каждого значения Pclass (NaN игнорируются в mean)
+    mean_age_by_pclass = {
+        int(pclass_value): float(mean_age)
+        for pclass_value, mean_age in titanic_df.groupby("Pclass")["Age"].mean().items()
+    }
 
-    # вычислить долю выживших для каждого Pclass
-    survival_rate_by_pclass = titanic_df.groupby("Pclass")["Survived"].mean()  # [1+0+1+1+0...].mean
+    # доля выживших для каждого Pclass
+    survival_rate_by_pclass = {
+        int(pclass_value): float(survival_rate)
+        for pclass_value, survival_rate in titanic_df.groupby("Pclass")["Survived"].mean().items()
+    }
 
-    # вернуть пять наибольших значений Fare в порядке убывания
-    highest_fares = titanic_df["Fare"].nlargest(5).tolist()
-    print(highest_fares)
+    # пять наибольших значений Fare в порядке убывания
+    highest_fares = [float(fare_value) for fare_value in titanic_df["Fare"].nlargest(5).tolist()]
 
-if __name__ == "__main__":
-    analyze_titanic(TitanicInput(csv_path="titanic.csv"))
+    return TitanicSummary(
+        row_count=row_count,
+        missing_by_column=missing_by_column,
+        adults_over_30_count=adults_over_30_count,
+        mean_age_by_pclass=mean_age_by_pclass,
+        survival_rate_by_pclass=survival_rate_by_pclass,
+        highest_fares=highest_fares,
+    )
