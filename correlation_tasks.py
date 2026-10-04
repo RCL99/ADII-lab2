@@ -36,7 +36,7 @@ def analyze_brain_correlations(data: BrainDataInput) -> BrainCorrelationSummary:
 
     # самое макисмальное значение корреляции по модулю
     strongest_mri_feature = str(general_corr.abs().idxmax())
-
+    
     return BrainCorrelationSummary(
         men_count=len(male),
         women_count=len(female),
@@ -44,6 +44,3 @@ def analyze_brain_correlations(data: BrainDataInput) -> BrainCorrelationSummary:
         men_mri_correlation=female_corr,
         strongest_mri_feature=strongest_mri_feature,
     )
-
-if __name__ == "__main__":
-    analyze_brain_correlations(BrainDataInput(csv_path="brainsize.txt"))
