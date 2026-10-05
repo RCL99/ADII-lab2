@@ -25,8 +25,8 @@ def analyze_brain_correlations(data: BrainDataInput) -> BrainCorrelationSummary:
 
     groups = data_frame.groupby("Gender")
 
-    male = groups["Male"]
-    female = groups["Female"]
+    male = groups.get_group("Male")
+    female = groups.get_group("Female")
 
     # корреляция каждой фичи с mri count
     male_corr = male[features].corrwith(male["MRI_Count"], method="pearson")
