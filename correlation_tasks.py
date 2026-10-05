@@ -15,11 +15,7 @@ def analyze_brain_correlations(data: BrainDataInput) -> BrainCorrelationSummary:
     корреляции с MRI_Count среди объединённых результатов двух групп.
     """
 
-    data_frame = pd.read_csv(
-        data.csv_path,
-        sep="\t",
-        na_values="NA",
-    )
+    data_frame = pd.read_csv(data.csv_path, sep="\t", na_values="NA")
 
     features = ["FSIQ", "VIQ", "PIQ", "Weight", "Height"]
 

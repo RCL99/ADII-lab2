@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c495472-3f54-447a-bb7a-f1c59bde8419" name="Changes" comment="rm pycache" />
+    <list default="true" id="0c495472-3f54-447a-bb7a-f1c59bde8419" name="Changes" comment="fixeeeeeeees">
+      <change beforePath="$PROJECT_DIR$/.gtiignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/correlation_tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/correlation_tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandas_tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandas_tasks.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +91,7 @@
       <workItem from="1791023670726" duration="2471000" />
       <workItem from="1791115433350" duration="3533000" />
       <workItem from="1791198191728" duration="897000" />
-      <workItem from="1791199096342" duration="737000" />
+      <workItem from="1791199096342" duration="1235000" />
     </task>
     <task id="LOCAL-00001" summary="initital commit">
       <option name="closed" value="true" />
@@ -200,7 +205,31 @@
       <option name="project" value="LOCAL" />
       <updated>1791199775694</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="rm pycache &amp; fixes">
+      <option name="closed" value="true" />
+      <created>1791199842484</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199842484</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixeeeeeeees">
+      <option name="closed" value="true" />
+      <created>1791199887116</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199887116</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixeeeeeeees">
+      <option name="closed" value="true" />
+      <created>1791199901752</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199901753</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,11 +254,13 @@
     <MESSAGE value="correlation task graph + fixes" />
     <MESSAGE value="fixes" />
     <MESSAGE value="rm pycache" />
-    <option name="LAST_COMMIT_MESSAGE" value="rm pycache" />
+    <MESSAGE value="rm pycache &amp; fixes" />
+    <MESSAGE value="fixeeeeeeees" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixeeeeeeees" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lab2$correlation_task_graph.coverage" NAME="correlation_task_graph Coverage Results" MODIFIED="1791199500158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lab2$pandas_tasks.coverage" NAME="pandas_tasks Coverage Results" MODIFIED="1791199259195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab2$pandas_tasks.coverage" NAME="pandas_tasks Coverage Results" MODIFIED="1791200314243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab2$correlation_tasks.coverage" NAME="correlation_tasks Coverage Results" MODIFIED="1791119577626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

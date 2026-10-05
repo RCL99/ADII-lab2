@@ -9,12 +9,12 @@ from grader_contracts.pandas_tasks import TitanicInput, TitanicSummary
 def analyze_titanic(data: TitanicInput) -> TitanicSummary:
     """Выполните загрузку и анализ датасета Titanic."""
 
-    data_frame = pd.read_csv(data.csv_path)
+    data_frame = pd.read_csv(data.csv_path, na_values="NA",)
 
     row_count = len(data_frame)
 
     # кол-во пропусков в каждом столбце
-    missing_by_column = data_frame.isnull().sum().to_dict()
+    missing_by_column = data_frame.isnull().sum()
 
     # число пассажиров > 30 лет
     adults_over_30_count = (data_frame["Age"] > 30).sum()
@@ -23,19 +23,17 @@ def analyze_titanic(data: TitanicInput) -> TitanicSummary:
     mean_age_by_pclass = (
         data_frame.groupby("Pclass")["Age"]
         .mean()
-        .to_dict()
     )
 
     # доля выживших для каждого Pclass
     survival_rate_by_pclass = (
         data_frame.groupby("Pclass")["Survived"]
         .mean()
-        .to_dict()
     )
 
     # 5 наибольших значений Fare
     highest_fares = data_frame["Fare"].nlargest(5).tolist()
-
+    # print(highest_fares)
     return TitanicSummary(
         row_count=row_count,
         missing_by_column=missing_by_column,
@@ -44,3 +42,6 @@ def analyze_titanic(data: TitanicInput) -> TitanicSummary:
         survival_rate_by_pclass=survival_rate_by_pclass,
         highest_fares=highest_fares,
     )
+
+# if __name__ == "__main__":
+#     titanic = analyze_titanic(TitanicInput(csv_path="titanic.csv"))
