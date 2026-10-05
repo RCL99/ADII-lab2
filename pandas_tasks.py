@@ -7,42 +7,34 @@ from grader_contracts.pandas_tasks import TitanicInput, TitanicSummary
 
 
 def analyze_titanic(data: TitanicInput) -> TitanicSummary:
-    """Выполните загрузку и анализ датасета Titanic.
+    """Выполните загрузку и анализ датасета Titanic."""
 
-    Нужно: посчитать пропуски, число пассажиров старше 30 лет, средний возраст
-    и долю выживших по классам, а также пять наибольших тарифов по убыванию.
-    """
+    data_frame = pd.read_csv(data.csv_path)
 
-    # датафрейм
-    titanic_df = pd.read_csv(data.csv_path)
-
-    # общее число строк
-    row_count = len(titanic_df)
+    row_count = len(data_frame)
 
     # кол-во пропусков в каждом столбце
-    missing_count_by_column = titanic_df.isnull().sum()
-    missing_by_column = {
-        column_name: int(missing_count)
-        for column_name, missing_count in missing_count_by_column.items()
-    }
+    missing_by_column = data_frame.isnull().sum().to_dict()
 
-    # число пассажиров старше 30 лет (NaN в Age дают False при сравнении)
-    adults_over_30_count = int((titanic_df["Age"] > 30).sum())
+    # число пассажиров > 30 лет
+    adults_over_30_count = int((data_frame["Age"] > 30).sum())
 
-    # средний возраст для каждого значения Pclass (NaN игнорируются в mean)
-    mean_age_by_pclass = {
-        int(pclass_value): float(mean_age)
-        for pclass_value, mean_age in titanic_df.groupby("Pclass")["Age"].mean().items()
-    }
+    # средний возраст для каждого Pclass
+    mean_age_by_pclass = (
+        data_frame.groupby("Pclass")["Age"]
+        .mean()
+        .to_dict()
+    )
 
     # доля выживших для каждого Pclass
-    survival_rate_by_pclass = {
-        int(pclass_value): float(survival_rate)
-        for pclass_value, survival_rate in titanic_df.groupby("Pclass")["Survived"].mean().items()
-    }
+    survival_rate_by_pclass = (
+        data_frame.groupby("Pclass")["Survived"]
+        .mean()
+        .to_dict()
+    )
 
-    # пять наибольших значений Fare в порядке убывания
-    highest_fares = [float(fare_value) for fare_value in titanic_df["Fare"].nlargest(5).tolist()]
+    # пять наибольших значений Fare
+    highest_fares = data_frame["Fare"].nlargest(5).tolist()
 
     return TitanicSummary(
         row_count=row_count,
