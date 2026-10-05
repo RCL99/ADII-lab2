@@ -17,7 +17,7 @@ def analyze_titanic(data: TitanicInput) -> TitanicSummary:
     missing_by_column = data_frame.isnull().sum().to_dict()
 
     # число пассажиров > 30 лет
-    adults_over_30_count = int((data_frame["Age"] > 30).sum())
+    adults_over_30_count = (data_frame["Age"] > 30).sum()
 
     # средний возраст для каждого Pclass
     mean_age_by_pclass = (
