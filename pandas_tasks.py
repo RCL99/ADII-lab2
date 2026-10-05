@@ -33,7 +33,7 @@ def analyze_titanic(data: TitanicInput) -> TitanicSummary:
         .to_dict()
     )
 
-    # пять наибольших значений Fare
+    # 5 наибольших значений Fare
     highest_fares = data_frame["Fare"].nlargest(5).tolist()
 
     return TitanicSummary(
