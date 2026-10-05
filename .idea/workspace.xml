@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c495472-3f54-447a-bb7a-f1c59bde8419" name="Changes" comment="rm pycache" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RCL99&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RCL99/ADII-lab2.git&quot;,
+    &quot;accountId&quot;: &quot;697b49a2-2e79-400a-bce1-e94736e39f24&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3K8SfjGrHUPacYnSdYHbN8opOhE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.correlation_task_graph.executor": "Run",
+    "Python.correlation_tasks.executor": "Run",
+    "Python.pandas_tasks.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/ilya/PycharmProjects/Adii/lab2",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.10315.174" />
+        <option value="bundled-python-sdk-eff1e8def5f5-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10315.174" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c495472-3f54-447a-bb7a-f1c59bde8419" name="Changes" comment="" />
+      <created>1790937806268</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790937806268</updated>
+      <workItem from="1790937807288" duration="546000" />
+      <workItem from="1790938362275" duration="6844000" />
+      <workItem from="1791010187758" duration="433000" />
+      <workItem from="1791010628088" duration="6488000" />
+      <workItem from="1791023670726" duration="2471000" />
+      <workItem from="1791115433350" duration="3533000" />
+      <workItem from="1791198191728" duration="897000" />
+      <workItem from="1791199096342" duration="737000" />
+    </task>
+    <task id="LOCAL-00001" summary="initital commit">
+      <option name="closed" value="true" />
+      <created>1790937986901</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790937986901</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initital commit">
+      <option name="closed" value="true" />
+      <created>1790942044575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1790942044575</updated>
+    </task>
+    <task id="LOCAL-00003" summary="pandas_tasks.py">
+      <option name="closed" value="true" />
+      <created>1790950855114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1790950855114</updated>
+    </task>
+    <task id="LOCAL-00004" summary="pandas_tasks.py return summary fix">
+      <option name="closed" value="true" />
+      <created>1790950997192</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1790950997192</updated>
+    </task>
+    <task id="LOCAL-00005" summary="correlation_tasks.py">
+      <option name="closed" value="true" />
+      <created>1791015929123</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1791015929123</updated>
+    </task>
+    <task id="LOCAL-00006" summary="correlation task graph + fixes">
+      <option name="closed" value="true" />
+      <created>1791119919879</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1791119919879</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1791199131601</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199131601</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1791199160694</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199160694</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1791199327270</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199327270</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1791199386001</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199386001</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1791199494920</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199494920</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1791199642753</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199642753</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1791199655198</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199655198</updated>
+    </task>
+    <task id="LOCAL-00014" summary="rm pycache">
+      <option name="closed" value="true" />
+      <created>1791199775694</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1791199775694</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initital commit" />
+    <MESSAGE value="pandas_tasks.py" />
+    <MESSAGE value="pandas_tasks.py return summary fix" />
+    <MESSAGE value="correlation_tasks.py" />
+    <MESSAGE value="correlation task graph + fixes" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="rm pycache" />
+    <option name="LAST_COMMIT_MESSAGE" value="rm pycache" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lab2$correlation_task_graph.coverage" NAME="correlation_task_graph Coverage Results" MODIFIED="1791199500158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab2$pandas_tasks.coverage" NAME="pandas_tasks Coverage Results" MODIFIED="1791199259195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab2$correlation_tasks.coverage" NAME="correlation_tasks Coverage Results" MODIFIED="1791119577626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
