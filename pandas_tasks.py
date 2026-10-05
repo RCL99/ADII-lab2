@@ -9,7 +9,7 @@ from grader_contracts.pandas_tasks import TitanicInput, TitanicSummary
 def analyze_titanic(data: TitanicInput) -> TitanicSummary:
     """Выполните загрузку и анализ датасета Titanic."""
 
-    data_frame = pd.read_csv(data.csv_path, na_values="NA",)
+    data_frame = pd.read_csv(data.csv_path, na_values="NA")
 
     row_count = len(data_frame)
 
