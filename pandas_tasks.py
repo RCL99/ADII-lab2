@@ -19,21 +19,21 @@ def analyze_titanic(data: TitanicInput) -> TitanicSummary:
     # число пассажиров > 30 лет
     adults_over_30_count = (data_frame["Age"] > 30).sum()
 
-    # средний возраст для каждого Pclass
+    # средний возраст для каждого pclass
     mean_age_by_pclass = (
         data_frame.groupby("Pclass")["Age"]
         .mean()
     )
 
-    # доля выживших для каждого Pclass
+    # доля выживших для каждого pclass
     survival_rate_by_pclass = (
         data_frame.groupby("Pclass")["Survived"]
         .mean()
     )
 
-    # 5 наибольших значений Fare
+    # 5 наибольших значений fare
     highest_fares = data_frame["Fare"].nlargest(5).tolist()
-    # print(highest_fares)
+
     return TitanicSummary(
         row_count=row_count,
         missing_by_column=missing_by_column,
@@ -42,6 +42,3 @@ def analyze_titanic(data: TitanicInput) -> TitanicSummary:
         survival_rate_by_pclass=survival_rate_by_pclass,
         highest_fares=highest_fares,
     )
-
-# if __name__ == "__main__":
-#     titanic = analyze_titanic(TitanicInput(csv_path="titanic.csv"))
